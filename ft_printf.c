@@ -6,7 +6,7 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 12:08:08 by imamasol          #+#    #+#             */
-/*   Updated: 2025/07/03 13:05:27 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/07/03 15:14:14 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static int	format_handler(const char *src, va_list arg, int *len)
 	if (param == 'u')
 		return (ft_paramunt(va_arg(arg, unsigned int), len));
 	if (param == 'x' || param == 'X')
-		return (ft_paramhex(va_arg(arg, unsigned int), (param == 'X'), len));
+		return (ft_paramhex(va_arg(arg, unsigned long), (param == 'X'), len));
 	if (param == '%')
 		return (ft_paramper(len));
 	else
