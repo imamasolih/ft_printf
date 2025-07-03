@@ -6,13 +6,13 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 13:06:58 by imamasol          #+#    #+#             */
-/*   Updated: 2025/07/03 18:07:21 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/07/03 18:13:27 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_paramhex(unsigned long addr, int flag, int *len)
 {
-	char *str;
+	char	*str;
 
 	str = ft_hexconvert(addr, flag);
 	if (str == NULL)

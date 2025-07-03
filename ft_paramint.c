@@ -6,13 +6,13 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 17:52:18 by imamasol          #+#    #+#             */
-/*   Updated: 2025/07/03 18:07:23 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/07/03 18:12:05 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_paramint(int num, int *len)
 {
-	char *str;
+	char	*str;
 
 	str = ft_itoa(num);
 	if (str == NULL)
