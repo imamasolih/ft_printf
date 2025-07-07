@@ -6,7 +6,7 @@
 #    By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/07 10:30:17 by imamasol          #+#    #+#              #
-#    Updated: 2025/07/07 10:36:14 by imamasol         ###   ########.fr        #
+#    Updated: 2025/07/07 11:20:19 by imamasol         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
 
-%.o: %.c printf.h
+%.o: %.c ft_printf.h
 	$(COMP) $(CFLAGS) -c $< -o $@
 
 clean:

@@ -6,11 +6,11 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 12:59:59 by imamasol          #+#    #+#             */
-/*   Updated: 2025/07/07 10:38:42 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/07/07 11:16:47 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_paramchar(int c, int *len)
 {
