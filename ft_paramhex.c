@@ -6,7 +6,7 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 13:06:58 by imamasol          #+#    #+#             */
-/*   Updated: 2025/07/07 11:19:35 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/07/07 12:57:22 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,12 @@ int	ft_paramhex(unsigned long addr, int flag, int *len)
 	if (str == NULL)
 	{
 		ft_putstr_fd("(null)", 1);
-		len += 6;
+		(*len) += 6;
 	}
 	else
 	{
 		ft_putstr_fd(str, 1);
-		len += ft_strlen(str);
+		(*len) += ft_strlen(str);
 		free(str);
 	}
 	return (2);
