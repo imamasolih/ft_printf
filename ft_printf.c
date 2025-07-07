@@ -6,12 +6,11 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 12:08:08 by imamasol          #+#    #+#             */
-/*   Updated: 2025/07/03 15:14:14 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/07/07 10:11:38 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdarg.h>
-#include <unistd.h>
+#include "printf.h"
 
 static int	format_handler(const char *src, va_list arg, int *len)
 {

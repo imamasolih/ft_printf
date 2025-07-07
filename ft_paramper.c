@@ -6,7 +6,15 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 13:07:03 by imamasol          #+#    #+#             */
-/*   Updated: 2025/07/03 13:07:04 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/07/07 10:11:04 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "printf.h"
+
+int	ft_paramper(int *len)
+{
+	ft_putchar_fd('%', 1);
+	(*len)++;
+	return (2);
+}

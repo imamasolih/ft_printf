@@ -1,22 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_paramstr.c                                      :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/03 13:07:06 by imamasol          #+#    #+#             */
-/*   Updated: 2025/07/07 10:11:20 by imamasol         ###   ########.fr       */
+/*   Created: 2025/05/29 12:59:13 by imamasol          #+#    #+#             */
+/*   Updated: 2025/07/07 10:12:06 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-int	ft_paramstr(char *s, int *len)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	if (!s)
-		s = "(null)";
-	ft_putstr_fd(s, 1);
-	(*len) += ft_strlen(s);
-	return (2);
+	size_t	n;
+
+	n = 0;
+	if (size == 0)
+		return (ft_strlen(src));
+	while (n < (size - 1) && src[n])
+		{
+			dst[n] = src[n];
+			n++;
+		}
+	dst[n] = 0;
+	return (ft_strlen(src));
 }

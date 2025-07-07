@@ -6,11 +6,11 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/21 16:42:23 by imamasol          #+#    #+#             */
-/*   Updated: 2025/06/21 17:10:50 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/07/07 10:10:21 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "printf.h"
 
 static char	*ft_divhex(int i, char *src, unsigned long num, int let_case)
 {

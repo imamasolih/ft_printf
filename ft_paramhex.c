@@ -6,11 +6,13 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 13:06:58 by imamasol          #+#    #+#             */
-/*   Updated: 2025/07/03 15:22:48 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/07/07 10:40:37 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_paramhex(unsigned long addr, int flag, int len)
+#include "printf.h"
+
+int	ft_paramhex(unsigned long addr, int flag, int *len)
 {
 	char *str;
 

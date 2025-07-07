@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_paramstr.c                                      :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/03 13:07:06 by imamasol          #+#    #+#             */
-/*   Updated: 2025/07/07 10:11:20 by imamasol         ###   ########.fr       */
+/*   Created: 2025/05/28 20:19:47 by imamasol          #+#    #+#             */
+/*   Updated: 2025/07/07 10:12:11 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-int	ft_paramstr(char *s, int *len)
+size_t	ft_strlen(const char *c)
 {
-	if (!s)
-		s = "(null)";
-	ft_putstr_fd(s, 1);
-	(*len) += ft_strlen(s);
-	return (2);
+	size_t n;
+
+	n = 0;
+	while (c[n])
+		n++;
+	return (n);
 }
