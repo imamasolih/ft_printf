@@ -6,7 +6,7 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 13:07:04 by imamasol          #+#    #+#             */
-/*   Updated: 2025/07/07 11:19:35 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/07/07 12:54:41 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,18 @@
 
 int	ft_paramptr(void *ptr, int *len)
 {
-	char			*str;
 	unsigned long	addr;
+	char			*str;
 
+	if (ptr == NULL)
+	{
+		ft_putstr_fd("(nil)", 1);
+		(*len) += 5;
+		return (2);
+	}
 	addr = (unsigned long)ptr;
 	str = ft_hexconvert(addr, 0);
-	if (addr == 0)
-	{
-		ft_putstr_fd("0x0", 1);
-		free(str);
-		(*len) += 3;
-	}
-	else if (str == NULL)
+	if (str == NULL)
 	{
 		ft_putstr_fd("(null)", 1);
 		(*len) += 6;
