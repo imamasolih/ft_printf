@@ -6,13 +6,13 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/04 21:28:52 by imamasol          #+#    #+#             */
-/*   Updated: 2025/07/07 11:19:35 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/07/12 12:59:32 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
 	while (*s)
 		write(fd, s++, 1);

@@ -6,7 +6,7 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 20:19:47 by imamasol          #+#    #+#             */
-/*   Updated: 2025/07/07 11:19:35 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/07/12 13:00:19 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlen(const char *c)
 {
-	size_t n;
+	size_t	n;
 
 	n = 0;
 	while (c[n])

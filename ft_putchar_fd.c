@@ -6,13 +6,13 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/04 21:19:41 by imamasol          #+#    #+#             */
-/*   Updated: 2025/07/07 11:19:35 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/07/12 12:59:24 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }

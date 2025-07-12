@@ -6,7 +6,7 @@
 /*   By: imamasol <imamasol@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/01 13:10:12 by imamasol          #+#    #+#             */
-/*   Updated: 2025/07/07 11:16:42 by imamasol         ###   ########.fr       */
+/*   Updated: 2025/07/12 12:55:59 by imamasol         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ static int	ft_nmcount(int num)
 	}
 	return (i);
 }
+
 static char	*ft_edge(void)
 {
 	char	*result;
@@ -41,6 +42,7 @@ static char	*ft_edge(void)
 	ft_strlcpy(result, "-2147483648", 12);
 	return (result);
 }
+
 static int	ft_checkneg(int *num)
 {
 	int	ind;
